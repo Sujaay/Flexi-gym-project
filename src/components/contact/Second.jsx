@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./contact.module.css";
 
-const Second = () => {
+const Second = () => { //functional component
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -9,7 +9,7 @@ const Second = () => {
 
   const [errorMessage, setErrorMessage] = useState("");
 
-  const formHandler = (e) => {
+  const formHandler = (e) => { //managing responses of the form
     e.preventDefault();
 
     if (!fullName || !email || !subject) {
@@ -24,7 +24,7 @@ const Second = () => {
     }
   };
 
-  return (
+  return ( //jsx component for html like syntax
     <div className={`${styles.second}  container sections-padding`}>
       <div data-aos="fade-down">
         <p className="paragraph">Welcome To strengthy</p>
