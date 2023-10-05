@@ -9,8 +9,8 @@ const Third = () => { //funtional component
           <h4>Phone</h4>
           <p>Capitalized on hanging frut to identify with additional</p>
           <p>+20 1111111111</p>
-        </div>
-        <div> // part below the form
+        </div> 
+        <div> 
           <i className="fa-solid fa-envelope"></i>
           <h4>Email</h4>
           <p>Capitalized on hanging frut to identify with additional</p>
