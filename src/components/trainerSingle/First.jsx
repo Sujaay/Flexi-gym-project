@@ -1,5 +1,5 @@
 import styles from "./trainer.module.css";
-
+//this particular code is used to give the zoom out effect on the page
 const First = () => {
   return (
     <div
