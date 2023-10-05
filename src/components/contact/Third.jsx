@@ -7,24 +7,24 @@ const Third = () => { //funtional component
         <div>
           <i className="fa-solid fa-phone"></i>
           <h4>Phone</h4>
-          <p>Capitalized on hanging frut to identify with additional</p>
-          <p>+20 1111111111</p>
+          <p>Call us here.</p>
+          <p>+91 0000000000</p>
         </div> 
         <div> 
           <i className="fa-solid fa-envelope"></i>
           <h4>Email</h4>
-          <p>Capitalized on hanging frut to identify with additional</p>
-          <p>therichposts@gmail.com</p>
+          <p>Our email ID.</p>
+          <p>strengthy@gmail.com</p>
         </div>
         <div>
           <i className="fa-solid fa-location-dot"></i>
           <h4>Location</h4>
-          <p>Capitalized on hanging frut to identify with additional</p>
-          <p>Cairo , Egypt</p>
+          <p>Our location</p>
+          <p>Pune, India</p>
         </div>
       </div>
     </div>
   );
 };
 
-export default Third;
+export default Third; //apply the export throughout the other modules of the application.
