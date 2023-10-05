@@ -1,5 +1,6 @@
 import styles from "./calculator.module.css";
 
+//The first is used to add the zoom out effect
 const First = () => {
   return (
     <div
