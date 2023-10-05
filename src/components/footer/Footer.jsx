@@ -58,7 +58,7 @@ const Footer = () => {
               target="_blank">
               <i className="fa-brands fa-linkedin"></i>
             </a>
-            <a href="https://github.com/therichpostajay/" target="_blank">
+            <a href="https://github.com/Sujaay/flexi-gym-project" target="_blank">
               <i className="fa-brands fa-github"></i>
             </a>
           </div>
