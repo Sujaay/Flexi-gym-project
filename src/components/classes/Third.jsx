@@ -9,9 +9,9 @@ const Third = () => {
       <div>
         <h2>Join Our Club</h2>
         <p>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. point of using
-          Lorem Ipsum is
+          Join our club today and embark on a journey to a healthier and more
+          active lifestyle. Our expert trainers and diverse range of classes
+          will help you achieve your fitness goals. Don't wait, start now!
         </p>
         <button onClick={() => navigate("/schedule")}>Start Now</button>
       </div>
@@ -20,3 +20,4 @@ const Third = () => {
 };
 
 export default Third;
+
