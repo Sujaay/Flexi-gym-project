@@ -2,6 +2,8 @@ import styles from "./footer.module.css";
 import logoIcon from "../../assets/Icon.png";
 import { useNavigate } from "react-router";
 
+//we have built footer using uondered list tag of html
+
 const Footer = () => {
   const navigate = useNavigate();
 
