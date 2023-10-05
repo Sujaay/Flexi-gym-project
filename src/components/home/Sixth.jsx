@@ -3,7 +3,7 @@ import photo1 from "../../assets/s1.jpg";
 import photo2 from "../../assets/s2.jpg";
 import photo3 from "../../assets/quet.png";
 
-// import Swiper
+// Import Swiper
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -18,7 +18,8 @@ const Sixth = () => {
     <div
       className={`${styles.six} sections-padding`}
       data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom">
+      data-aos-anchor-placement="center-bottom"
+    >
       <div className={`${styles.six_content} container `}>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -33,7 +34,9 @@ const Sixth = () => {
             1024: {
               slidesPerView: 3,
             },
-          }}>
+          }}
+        >
+          {/* Slide 1 */}
           <SwiperSlide>
             <div className={styles.swipe_content}>
               <div className={styles.six_image_holder}>
@@ -42,23 +45,23 @@ const Sixth = () => {
               </div>
 
               <div className={styles.six_text}>
-                <h4>Nattasha</h4>
-                <p>Athletics /Trainer</p>
+                <h4>Natasha</h4>
+                <p>Athletics / Trainer</p>
                 <div className={styles.starts}>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-regular fa-star"></i>
+                  <i className="fa-regular fa-star"></i>
+                  <i className="fa-regular fa-star"></i>
+                  <i className="fa-regular fa-star"></i>
+                  <i className="fa-regular fa-star"></i>
                 </div>
                 <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour
+                  Explore the world of fitness and reach your goals with Natasha.
                 </p>
               </div>
             </div>
           </SwiperSlide>
+
+          {/* Slide 2 */}
           <SwiperSlide>
             <div className={styles.swipe_content}>
               <div className={styles.six_image_holder}>
@@ -67,23 +70,23 @@ const Sixth = () => {
               </div>
 
               <div className={styles.six_text}>
-                <h4>Nattasha</h4>
-                <p>Athletics /Trainer</p>
+                <h4>John</h4>
+                <p>Yoga Instructor</p>
                 <div className={styles.starts}>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-regular fa-star"></i>
+                  <i className="fa-regular fa-star"></i>
+                  <i className="fa-regular fa-star"></i>
+                  <i className="fa-regular fa-star"></i>
+                  <i className="fa-regular fa-star"></i>
                 </div>
                 <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour
+                  Enhance your well-being through yoga practice with John.
                 </p>
               </div>
             </div>
           </SwiperSlide>
+
+          {/* Slide 3 */}
           <SwiperSlide>
             <div className={styles.swipe_content}>
               <div className={styles.six_image_holder}>
@@ -92,44 +95,17 @@ const Sixth = () => {
               </div>
 
               <div className={styles.six_text}>
-                <h4>Nattasha</h4>
-                <p>Athletics /Trainer</p>
+                <h4>Lisa</h4>
+                <p>Fitness Coach</p>
                 <div className={styles.starts}>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-regular fa-star"></i>
+                  <i className="fa-regular fa-star"></i>
+                  <i className="fa-regular fa-star"></i>
+                  <i className="fa-regular fa-star"></i>
+                  <i className="fa-regular fa-star"></i>
                 </div>
                 <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour
-                </p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={styles.swipe_content}>
-              <div className={styles.six_image_holder}>
-                <img src={photo2} alt="" className={styles.trainer} />
-                <img src={photo3} alt="" />
-              </div>
-
-              <div className={styles.six_text}>
-                <h4>Nattasha</h4>
-                <p>Athletics /Trainer</p>
-                <div className={styles.starts}>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                </div>
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour
+                  Achieve your fitness goals with expert guidance from Lisa.
                 </p>
               </div>
             </div>
@@ -141,3 +117,4 @@ const Sixth = () => {
 };
 
 export default Sixth;
+
