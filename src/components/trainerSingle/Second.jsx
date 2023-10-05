@@ -1,11 +1,15 @@
+// Importing styles from the trainer.module.css file
 import styles from "./trainer.module.css";
+
+// Importing trainer image from the assets folder
 import photo from "../../assets/tr1.png";
 
 const Second = () => {
   return (
     <div className={`${styles.second} container sections-padding`}>
+      {/* Trainer Information */}
       <div data-aos="fade-up">
-        <img src={photo} alt="" />
+        <img src={photo} alt="Madison Froning" />
         <h2>Madison Froning</h2>
         <p>Grossfit Trainer</p>
         <p className={styles.info}>
@@ -17,12 +21,12 @@ const Second = () => {
         <p className={styles.info}>
           <span>Location :</span> Cairo
         </p>
-        <a
-          href="#"
-          target="_blank">
+        <a href="#" target="_blank">
           <i className="fa-brands fa-linkedin"></i>
         </a>
       </div>
+
+      {/* Personal Details */}
       <div data-aos="fade-up">
         <h1>Personal Details</h1>
         <p>
@@ -33,6 +37,8 @@ const Second = () => {
           place and supplies it with the necessary regelialia. It is a
           paradisematic country, in which roasted.
         </p>
+
+        {/* Healthy Lifestyle Section */}
         <h2>The Healthy Life Style For All</h2>
         <p>
           There are many variations of passangers of Lorem Ipsum availables but
@@ -48,6 +54,8 @@ const Second = () => {
             Credibly reinter mediate backend ideas for cross-platform models
           </li>
         </ul>
+
+        {/* Health Improvements */}
         <h2>Make real time a health improvements</h2>
         <p>
           Proactively envisioned multimedia based expertise crosses media growth
