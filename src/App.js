@@ -36,7 +36,6 @@ const App = () => {
           <Route path="/Fitness-Website" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="classes" element={<Classes />} />
-          <Route path="yogaClass" element={<YogaClass />} />
           <Route path="trainers" element={<TrainersPage />} />
           <Route path="singleClass" element={<TrainerSingle />} />
           <Route path="blog" element={<Blog />} />
