@@ -9,9 +9,8 @@ const Eighth = () => {
           <p>Gym Amenities</p>
           <h2>The Unique Standard</h2>
           <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. point of
-            using Lorem Ipsum is
+            Discover our world-class gym amenities that set us apart from the rest.
+            We're dedicated to providing you with an exceptional fitness experience.
           </p>
           <img src={photo} alt="" />
         </div>
@@ -21,7 +20,7 @@ const Eighth = () => {
               <i className="fa-regular fa-circle-check"></i>
               Lockers
             </h5>
-            <p>Secure lockers that work by you choosing a four digit code.</p>
+            <p>Secure lockers that work by you choosing a four-digit code.</p>
           </div>
           <div>
             <h5>
@@ -29,8 +28,8 @@ const Eighth = () => {
               Changing Rooms
             </h5>
             <p>
-              Delicious, protein-packed gourmet shakes that come in chocolate,
-              fruit, vanilla and more. Water and snacks too.
+              Spacious changing rooms equipped with all the amenities you need for
+              a comfortable post-workout experience.
             </p>
           </div>
           <div>
@@ -39,8 +38,8 @@ const Eighth = () => {
               Fuel Bar
             </h5>
             <p>
-              Mini towels for class and lovely big towels for showers after
-              class. *Amenities may not be available at all studios
+              Recharge at our fuel bar with delicious, protein-packed gourmet shakes
+              available in various flavors. We also provide water and snacks.
             </p>
           </div>
           <div>
@@ -48,14 +47,14 @@ const Eighth = () => {
               <i className="fa-regular fa-circle-check"></i>
               Complimentary Towels
             </h5>
-            <p>Secure lockers that work by you choosing a four digit code.</p>
+            <p>Enjoy complimentary towels during your workout for added convenience.</p>
           </div>
           <div>
             <h5>
               <i className="fa-regular fa-circle-check"></i>
               Wifi & Restrooms
             </h5>
-            <p>Secure lockers that work by you choosing a four digit code.</p>
+            <p>Stay connected with our complimentary Wi-Fi and access clean restrooms.</p>
           </div>
           <div>
             <h5>
@@ -63,8 +62,8 @@ const Eighth = () => {
               Hot Showers & Hair Care
             </h5>
             <p>
-              what your body craves in the morning, you're not alone. The
-              majority of people crank the handle all the way up.
+              Refresh after your workout with hot showers and quality hair care products.
+              Your well-being is our priority.
             </p>
           </div>
         </div>
@@ -74,3 +73,4 @@ const Eighth = () => {
 };
 
 export default Eighth;
+
