@@ -1,5 +1,7 @@
 import styles from "./home.module.css";
 
+//In this part we have added the fitness training , regular routine and etc
+
 const FivethSection = () => {
   return (
     <div className={`${styles.five} container`}>
