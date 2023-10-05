@@ -1,5 +1,7 @@
 import styles from "./calculator.module.css";
 
+//The third file has the subsribe button and email .
+
 const Third = () => {
   return (
     <div className={styles.third}>
