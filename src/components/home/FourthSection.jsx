@@ -14,40 +14,44 @@ const FourthSection = () => {
         className={styles.text}
         data-aos="fade-down"
         data-aos-easing="linear"
-        data-aos-duration="1500">
-        <p className="paragraph">About</p>
+        data-aos-duration="1500"
+      >
+        <p className="paragraph">About Us</p>
         <h2>
-          Respect Your Body,
+          Embrace a Healthy Lifestyle,
           <br />
-          It’s the Only One You Get
+          You Deserve It
         </h2>
         <p>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. point of using
-          Lorem Ipsum is
+          Discover the path to a healthier, more vibrant you. We are dedicated to
+          providing you with the support and resources you need to achieve your
+          fitness goals.
         </p>
         <div className={styles.text_one}>
           <div>
             <h3>Motivation</h3>
             <p>
-              It is a long established fact that a reader will be distracted{" "}
+              Find the motivation you need to stay committed to your fitness journey.
             </p>
           </div>
-          <img src={photo1} alt="Photo one" />
+          <img src={photo1} alt="Motivation" />
         </div>
         <div className={styles.text_two}>
-          <img src={photo2} alt="Photo two" />
+          <img src={photo2} alt="Inspiration" />
           <div>
             <h3>Inspire</h3>
-            <p>will be distracted by readable content using Lorem Ipsum </p>
+            <p>
+              Inspire yourself and others to lead a healthier and happier life.
+            </p>
           </div>
         </div>
       </div>
       <div
         className={styles.fourth_image_container}
         data-aos="fade-up"
-        data-aos-duration="3000">
-        <img src={photo3} alt="Man Exercise" />
+        data-aos-duration="3000"
+      >
+        <img src={photo3} alt="Man Exercising" />
         <button onClick={() => navigate("/schedule")}>Get Started</button>
       </div>
     </div>
@@ -55,3 +59,4 @@ const FourthSection = () => {
 };
 
 export default FourthSection;
+
