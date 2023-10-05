@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer";
 import Home from "./components/home/Home";
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
+// Lazy loading components for code splitting
 const About = React.lazy(() => import("./components/about/About"));
 const Classes = React.lazy(() => import("./components/classes/Classes"));
 const YogaClass = React.lazy(() => import("./components/yogaClass/YogaClass"));
@@ -29,17 +30,23 @@ const ErrorPage = React.lazy(() => import("./components/errorPage/ErrorPage"));
 const App = () => {
   return (
     <div>
+      {/* Header Component */}
       <Header />
+      
+      {/* Component to handle scrolling to top */}
       <ScrollToTop />
+      
+      {/* Suspense is used for lazy loading with a fallback UI */}
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
+          {/* Define routes for different components */}
           <Route path="/Fitness-Website" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="classes" element={<Classes />} />
           <Route path="trainers" element={<TrainersPage />} />
           <Route path="singleClass" element={<TrainerSingle />} />
           <Route path="blog" element={<Blog />} />
-          <Route path="yogaClass" element={<yogaClass />} />
+          <Route path="yogaClass" element={<YogaClass />} />
           <Route path="blogSingle" element={<BlogSingle />} />
           <Route path="contact" element={<Contact />} />
           <Route path="schedule" element={<Schedule />} />
@@ -48,6 +55,8 @@ const App = () => {
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Suspense>
+      
+      {/* Footer Component */}
       <Footer />
     </div>
   );
