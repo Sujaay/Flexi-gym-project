@@ -1,6 +1,9 @@
 import { useState } from "react";
 import styles from "./calculator.module.css";
 
+//In the second page we have created the form for accepting user details 
+//We have also included a BMI chart
+
 const Second = () => {
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
@@ -8,6 +11,7 @@ const Second = () => {
   const [gender, setGender] = useState("");
   const [email, setEmail] = useState("");
 
+  // State variables for form error and BMI categories
   const [formError, setFormError] = useState("");
 
   const [underweight, setUnderweight] = useState("");
@@ -15,9 +19,11 @@ const Second = () => {
   const [overweight, setOverweight] = useState("");
   const [obese, setObese] = useState("");
 
+  //Function to handle form Submission
   const formHandler = (e) => {
     e.preventDefault();
 
+    //To check if any field is empty 
     if (!height || !weight || !age || !gender) {
       setFormError("Fill All Fields");
     } else {
@@ -120,3 +126,4 @@ const Second = () => {
 };
 
 export default Second;
+
