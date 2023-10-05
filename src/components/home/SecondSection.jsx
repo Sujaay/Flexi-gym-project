@@ -27,14 +27,14 @@ const SecondSection = () => {
         <div>
           <img src={photo2} alt="women in gym" />
           <h3>Aerobic Training</h3>
-          <p>containing Lorem Ipsum passagesand more recently with </p>
+          <p> This is aerobic training </p>
           <a href="#">Read More</a>
         </div>
 
         <div>
           <img src={photo3} alt="man in gym" />
           <h3>CrossFit Workout</h3>
-          <p>containing Lorem Ipsum passagesand more recently with </p>
+          <p>Contains cross fit workouts </p>
           <a href="#">Read More</a>
         </div>
       </div>
