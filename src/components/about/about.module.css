@@ -1,3 +1,4 @@
+/* First Section */
 .first {
   background-image: url(../../assets/about1.jpg);
 }
@@ -8,12 +9,11 @@
 
 @media (max-width: 600px) {
   .first h1 {
-    font-size: 30px;
+    font-size: 30px; /* Adjust font size for smaller screens */
   }
 }
 
-/* Second Section  */
-
+/* Second Section */
 .second {
   position: relative;
   top: -120px;
@@ -32,13 +32,12 @@
 
 @media (max-width: 600px) {
   .second {
-    top: -80px;
-    width: 80%;
+    top: -80px; /* Adjust position for smaller screens */
+    width: 80%; /* Adjust width for smaller screens */
   }
 }
 
-/* Section Three  */
-
+/* Section Three */
 .third {
   display: flex;
   align-items: flex-start;
@@ -55,7 +54,7 @@
 }
 
 .one_content p:last-of-type {
-  width: 80%;
+  width: 80%; /* Adjust width for better readability */
   color: var(--four);
   margin: 20px 0;
 }
@@ -111,15 +110,14 @@
 
 @media (max-width: 650px) {
   .third {
-    flex-direction: column;
+    flex-direction: column; /* Change to column layout on smaller screens */
   }
   .third > div {
-    width: 100%;
+    width: 100%; /* Full width for divs on smaller screens */
   }
 }
 
-/* Section Four  */
-
+/* Section Four */
 .four_image {
   background-image: url(../../assets/bg.png);
   background-size: cover;
@@ -184,6 +182,7 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   color: var(--three);
 }
+
 .numbers > div {
   text-align: center;
   padding: 30px;
@@ -198,6 +197,6 @@
 @media (max-width: 350px) {
   .four_boxes,
   .numbers {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjust column layout for very small screens */
   }
 }
