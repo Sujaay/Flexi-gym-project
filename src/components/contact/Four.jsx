@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./contact.module.css";
 
-const Four = () => {
+const Four = () => { //activity index, active is an array of bool values, active index is initially set to 0, it is the index of currently active state
   const [active, setActive] = useState(Array(4).fill(false));
   const [activeIndex, setActiveIndex] = useState(-1);
 
