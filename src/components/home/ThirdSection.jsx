@@ -1,5 +1,5 @@
 import styles from "./home.module.css";
-
+//In this file we have addded the marque animation 
 const ThirdSection = () => {
   return (
     <div className={styles.third}>
