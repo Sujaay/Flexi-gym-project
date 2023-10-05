@@ -20,13 +20,13 @@ const Second = () => {
           <img src={photo1} alt="" />
           <h3>Pilates Training</h3>
           <p>Improve flexibility and core strength with our Pilates Training classes.</p>
-          <Link to={"/yogaClass"}>Read More</Link>
+          <Link to={"/"}>Read More</Link>
         </div>
         <div data-aos="fade-right">
           <img src={photo2} alt="" />
           <h3>CrossFit</h3>
           <p>Experience high-intensity workouts and CrossFit training for fitness enthusiasts.</p>
-          <Link to={"/singleClass"}>Read More</Link>
+          <Link to={"/"}>Read More</Link>
         </div>
         <div data-aos="fade-right">
           <img src={photo3} alt="" />
@@ -50,7 +50,7 @@ const Second = () => {
           <img src={photo6} alt="" />
           <h3>Energy Dance</h3>
           <p>Experience the energy of dance and fitness in our Energy Dance classes.</p>
-          <Link to={"/yogaClass"}>Read More</Link>
+          <Link to={"/"}>Read More</Link>
         </div>
       </div>
     </div>
