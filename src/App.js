@@ -26,6 +26,7 @@ const Calculator = React.lazy(() =>
   import("./components/calculator/Calculator")
 );
 const ErrorPage = React.lazy(() => import("./components/errorPage/ErrorPage"));
+const SignUp = React.lazy(() => import("./components/signUp/signUp"));
 
 const App = () => {
   return (
@@ -53,6 +54,7 @@ const App = () => {
           <Route path="calculator" element={<Calculator />} />
           <Route path="errorPage" element={<ErrorPage />} />
           <Route path="*" element={<ErrorPage />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
       </Suspense>
       
@@ -63,3 +65,4 @@ const App = () => {
 };
 
 export default App;
+
