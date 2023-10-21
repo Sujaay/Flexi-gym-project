@@ -41,6 +41,9 @@ const Header = () => {
             <Link to="/contact">Contact</Link>
           </li>
           <li>
+            <Link to="/signUp">SignUp</Link>
+          </li>
+          <li>
             <button onClick={() => navigate("/classes")}>Book Class</button>
           </li>
         </ul>
