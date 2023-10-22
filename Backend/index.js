@@ -1,32 +1,20 @@
 const express = require('express');
-const cors = require('cors')
-const bodyParser = require('body-parser');
-const router = require('./routes/router');
-const mongoose = require('mongoose')
-require('dotenv/config')
-
+const connectDB = require('./config/db');
+const contactRoutes = require('./routes/contactRoutes');
 
 const app = express();
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:false}));
+// Connect to MongoDB
+connectDB();
 
+// Middleware
+app.use(express.json());
 
-const corsOptions = {
-    origin: '*',
-    credentials: true,
-    optionSuccessStatus: 200
-}
+// Define Routes
+app.use('/', contactRoutes);
 
-app.use(cors (corsOptions))
-app.use('/', router); 
-
-const dbOptions = {useNewUrlParser:true, useUnifiedTopology:true}
-mongoose.connect(process.env.DB_URI, dbOptions)
-.then(() => console.log('DB Connected!'))
-.catch(err => console.log(err))
-
-const port = process.env.PORT || 4000
-const server = app.listen(port, () => {
-    console.log(`Server is running on port ${port}`)
-})
+// Start Server
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
