@@ -18,7 +18,7 @@ const Second = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:4000/submit-contact-form", {
+      const response = await fetch("http://localhost:4000/api/contact/submit-contact-form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -33,7 +33,7 @@ const Second = () => {
 
       const data = await response.json();
 
-      if (response.ok) {
+      if (response.status === 200) {
         setFullName("");
         setEmail("");
         setSubject("");
@@ -91,7 +91,7 @@ const Second = () => {
         />
         <textarea
           name=""
-          placeholder="Massage"
+          placeholder="Message"
           value={massage}
           onChange={(e) => setMassage(e.target.value)}></textarea>
         <button onClick={(e) => formHandler(e)} type="submit">

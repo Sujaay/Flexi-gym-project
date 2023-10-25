@@ -4,7 +4,7 @@ const contactSchema = new mongoose.Schema({
   fullName: String,
   email: String,
   subject: String,
-  message: String,
+  massage: String,
 });
 
 const Contact = mongoose.model('Contact', contactSchema);

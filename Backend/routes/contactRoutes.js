@@ -2,15 +2,16 @@ const express = require('express');
 const Contact = require('../models/contact');
 const router = express.Router();
 
-router.post('/submit-contact-form', async (req, res) => {
+const sendContactDetails = async (req, res) => {
   try {
-    const { fullName, email, subject, message } = req.body;
-    const newContact = new Contact({ fullName, email, subject, message });
-    await newContact.save();
-    res.json({ message: 'Form submitted successfully!' });
+    const { fullName, email, subject, massage } = req.body;
+    const newContact = await Contact.create({ fullName, email, subject, massage });
+    res.status(200).json({ message: 'Form submitted successfully!', payload: newContact });
   } catch (error) {
     res.status(500).json({ message: 'An error occurred. Please try again later.' });
   }
-});
+}
+
+router.route('/submit-contact-form').post(sendContactDetails);
 
 module.exports = router;
