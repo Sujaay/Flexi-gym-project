@@ -2,6 +2,7 @@ const express = require('express');
 const connectDB = require('./config/db');
 const contactRoutes = require('./routes/contactRoutes');
 const cors = require('cors');
+import postRoutes from './routes/posts.js';
 
 const app = express();
 
@@ -11,8 +12,10 @@ connectDB();
 // Middleware
 app.use(express.json());
 app.use(cors());
+
 // Define Routes
 app.use('/api/contact', contactRoutes);
+app.use('/api/posts', postRoutes);
 
 // Start Server
 const PORT = process.env.PORT || 4000;

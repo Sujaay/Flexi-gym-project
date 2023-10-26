@@ -1,10 +1,10 @@
 import React, { Suspense } from "react";
 import { Route, Routes } from "react-router";
-
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Home from "./components/home/Home";
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
+
 
 // Lazy loading components for code splitting
 const About = React.lazy(() => import("./components/about/About"));
@@ -27,6 +27,7 @@ const Calculator = React.lazy(() =>
 );
 const ErrorPage = React.lazy(() => import("./components/errorPage/ErrorPage"));
 const SignUp = React.lazy(() => import("./components/signUp/signUp"));
+
 
 const App = () => {
   return (
@@ -54,7 +55,7 @@ const App = () => {
           <Route path="calculator" element={<Calculator />} />
           <Route path="errorPage" element={<ErrorPage />} />
           <Route path="*" element={<ErrorPage />} />
-          <Route path="/signup" element={<SignUp />} />
+          <Route path="/singUp" element={<SignUp />} />
         </Routes>
       </Suspense>
       
